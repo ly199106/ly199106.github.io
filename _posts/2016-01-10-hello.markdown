@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Hello!"
-date:   2016-01-05 22:02:01 +0800
+date:   2016-01-10 
 categories: jekyll update
 ---
 This is my first blog!
