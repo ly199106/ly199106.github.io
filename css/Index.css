@@ -1,6 +1,9 @@
 footer a:visited {
 color: #FFFFFF;
 }
+footer a:hover {
+text-decoration: none;
+}
 footer a:visited {
 color: #FFFFFF;
 }
