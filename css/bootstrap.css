@@ -6757,7 +6757,7 @@ button.close {
     display: none !important;
   }
 }
-.footer {
+.bottomfooter {
   position: absolute;
   min-height: 50px;
   margin-top: 80px;
