@@ -6764,6 +6764,12 @@ button.close {
   margin-top: 80px;
   background: #3a5795;
   text-align: center;
+}
+.topheader {
   
+  min-height: 50px;
+  line-height: 50px;
+  background: #3a5795;
+  text-align: center;
 }
 /*# sourceMappingURL=bootstrap.css.map */
