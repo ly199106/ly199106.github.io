@@ -12,25 +12,25 @@ categories: jekyll update
  * 2.How to judge whether the input is an array?
 
    Obviously they are very simple questions, at least at my first look.What I need to do is to write two functions in JS to solve the above.Without much thought,I've write down my codes like the following:
-     
-    // 判断arr是否为一个数组，返回一个bool值
-     function isArray(arr)
-    {
-    // your implement
-	if(arr instanceof Array)
-	return true;
-	else
-	return false;
-    }
+  {% highlight ruby %}
+ // 判断arr是否为一个数组，返回一个bool值
+   function isArray(arr)
+   {
+   // your implement
+   if(arr instanceof Array)
+   return true;
+   else
+   return false;
+   }
 
-    // 判断fn是否为一个函数，返回一个bool值
-    function isFunction(fn)
-    {
-    // your implement
-	if(typeof fn=== 'function')
-	return true;
-	else
-	return false;
-    }
-
+ // 判断fn是否为一个函数，返回一个bool值
+   function isFunction(fn)
+   {
+   // your implement
+   if(typeof fn=== 'function')
+   return true;
+   else
+   return false;
+   }
+{% endhighlight %}
 To be continue...
