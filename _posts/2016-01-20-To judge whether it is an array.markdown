@@ -11,7 +11,7 @@ OK,it is my first note-book blog,I've write in English because currently I don't
  * 1.How to judge whether the input is an array?
  * 2.How to judge whether the input is an function?
 
-   Obviously they are very simple questions, at least at my first look.What I need to do is to write two functions in JS to solve the above two problems.Without much thought,I've write down my codes like the following:
+ Obviously they are very simple questions, at least at my first look.What I need to do is to write two functions in JS to solve the above two problems.Without much thought,I've write down my codes like the following:
 {% highlight ruby %}
  /* 判断arr是否为一个数组，返回一个bool值*/
    function isArray(arr)
