@@ -19,3 +19,5 @@ github_username:  ly199106
 
 # Build settings
 markdown: kramdown
+
+encoding: UTF-8
