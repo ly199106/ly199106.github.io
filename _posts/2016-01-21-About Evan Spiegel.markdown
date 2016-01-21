@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Why does Evan Spiegel own snapchat if he doesn't know programming?"
+title:  "About Evan Spiegel"
 date:   2016-01-21 
 categories: jekyll update
 ---
