@@ -4,7 +4,7 @@ title:  "How to judge whether the input is an array"
 date:   2016-01-20 
 categories: jekyll update
 ---
-OK,it is my first note-book blog,I've write in English because currently I don't know how to write jekyll blog in Chinese.When I tried to write something on it in Chinese,I sadly find the part in Chinese can be displayed on the screen.There must be something wrong with my default settings with jekyll(I promise I will solve this problem some days later).Now that it can only be noted in English,I would rather see it as a chance to improve my English writting.
+OK,it is my first note-book blog,I've write in English because currently I don't know how to write jekyll blog in Chinese.When I tried to write something on it in Chinese,I sadly find the part in Chinese can not be displayed on the screen.There must be something wrong with my default settings with jekyll(I promise I will solve this problem some days later).Now that it can only be noted in English,I would rather see it as a chance to improve my English writting.
 
  Well let's back on today's theme.Recent days I've study at Baidu-ife on github.The first task I've jumped over, though I am still a freshman of front-end.I came to task0002,which teaches me lessons of Javascript.The first two question I met is:
 
@@ -33,4 +33,10 @@ OK,it is my first note-book blog,I've write in English because currently I don't
    return false;
    }
 {% endhighlight %}
-To be continue...
+Later I begin to realize such 'simple questions' must have better answers,so I search for some better answers,as is shown as the following links:
+
+
+* [The Github of Gaohaoyang][https://github.com/Gaohaoyang/baidu-ife-practice/blob/master/task0002/js/util.js]
+* [The difference between typeof and instanceof][http://segmentfault.com/a/1190000000730982]
+* [A problem of instanceof][http://www.cnblogs.com/huangxincheng/p/4176860.html]
+Now I see that such'simple questions' are worth thinking deeply...
