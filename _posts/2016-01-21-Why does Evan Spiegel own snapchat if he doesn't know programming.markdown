@@ -1,11 +1,12 @@
 ---
 layout: post
 title:  "Why does Evan Spiegel own snapchat if he doesn't know programming?"
-date:   2016-01-20 
+date:   2016-01-21 
 categories: jekyll update
 ---
 The following question is interesting,since I have never found similar question in Zhihu,it is a question about Evan Spiegel,one of the richest man born in 1990s,in Quora:
-###  Q:Why does Evan Spiegel own snapchat if he doesn't know programming?
+
+### Q:Why does Evan Spiegel own snapchat if he doesn't know programming?
 
 A:Evan Spiegel is just one shareholder (although a very big one), and programming is just one of the important skills in a software technology business.
 
