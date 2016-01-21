@@ -41,4 +41,5 @@ Later I begin to realize such 'simple questions' must have better answers,so I s
 * [A problem of instanceof](http://www.cnblogs.com/huangxincheng/p/4176860.html)
 
 Now I see that such'simple questions' are worth thinking deeply...
-可以用中文写吗？
+
+P.S：I suddenly find it can be noted in Chinese!--21th,Jan,2016
