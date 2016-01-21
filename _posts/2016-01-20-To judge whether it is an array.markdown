@@ -36,7 +36,8 @@ OK,it is my first note-book blog,I've write in English because currently I don't
 Later I begin to realize such 'simple questions' must have better answers,so I search for some better answers,as is shown as the following links:
 
 
-* [The Github of Gaohaoyang][https://github.com/Gaohaoyang/baidu-ife-practice/blob/master/task0002/js/util.js]
-* [The difference between typeof and instanceof][http://segmentfault.com/a/1190000000730982]
-* [A problem of instanceof][http://www.cnblogs.com/huangxincheng/p/4176860.html]
+* [The Github of Gaohaoyang](https://github.com/Gaohaoyang/baidu-ife-practice/blob/master/task0002/js/util.js)
+* [The difference between typeof and instanceof](http://segmentfault.com/a/1190000000730982)
+* [A problem of instanceof](http://www.cnblogs.com/huangxincheng/p/4176860.html)
+
 Now I see that such'simple questions' are worth thinking deeply...
