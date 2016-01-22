@@ -1,8 +1,8 @@
 /**
- * 回到顶部
+ * back to the top
  */
 function backToTop() {
-    //滚页面才显示返回顶部
+    //Scroll to back to the top
     $(window).scroll(function() {
         if ($(window).scrollTop() > 100) {
             $("#top").fadeIn(500);
@@ -10,14 +10,14 @@ function backToTop() {
             $("#top").fadeOut(500);
         }
     });
-    //点击回到顶部
+    //Click to roll back to the top
     $("#top").click(function() {
         $("body").animate({
             scrollTop: "0"
         }, 500);
     });
 
-    //初始化tip
+    //Initialize tip
     $(function() {
         $('[data-toggle="tooltip"]').tooltip();
     });
