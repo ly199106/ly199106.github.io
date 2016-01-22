@@ -1,4 +1,13 @@
 /**
+ * Ò³Ãæready·½·¨
+ */
+$(document).ready(function() {
+
+    categoryDisplay();
+    generateContent();
+    backToTop();
+});
+/**
  * back to the top
  */
 function backToTop() {
