@@ -78,7 +78,7 @@ text-align: center;
 	background-color: #bbb;
 	border-radius:7px;
 	opacity: 0.8;
-	display: none;
+	display: block;
 	z-index: 888;
 }
 #top .arrow{
