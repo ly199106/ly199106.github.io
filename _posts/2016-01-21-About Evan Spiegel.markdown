@@ -2,7 +2,7 @@
 layout: post
 title:  "About Evan Spiegel"
 date:   2016-01-21 
-categories: jekyll update
+categories: Collections
 ---
 The following question is interesting,since I have never found similar question in Zhihu,it is a question about Evan Spiegel,one of the richest man born in 1990s,in Quora:
 
