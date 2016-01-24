@@ -34,12 +34,12 @@
 
 
           {% endfor %}
-          <!-- 分页 -->
+          
       <div class="paginator">
               {% if paginator.total_pages > 1 %}
-              <!-- 分页代码 -->
+              
               {% if paginator.previous_page %}
-            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">上一页</a>
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Previous</a>
         {% endif %}
 
         {% for page in (1..paginator.total_pages) %}
@@ -53,7 +53,7 @@
         {% endfor %}
 
         {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">下一页</a>
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next</a>
         {% endif %}
               {% endif %}
       </div>
