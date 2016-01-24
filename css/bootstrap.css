@@ -1791,14 +1791,11 @@ pre code {
   }
   .col-sm-9 {
     width: 75%;
-	background-color: #fff;
+	
 	
   }
   .col-sm-8 {
     width: 66.66666667%;
-	background-color: #fff;
-	border: 1px solid #edeeee;
-	border-radius: 3px;
 	box-sizing: border-box;
 	-webkit-box-align: stretch;
 	align-items: stretch;
