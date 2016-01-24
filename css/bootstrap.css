@@ -1797,11 +1797,11 @@ pre code {
 	background-color: #fff;
 	border: 1px solid #edeeee;
 	border-radius: 3px;
-	box-sizing: border-box;
+	/*box-sizing: border-box;
 	-webkit-box-align: stretch;
 	align-items: stretch;
 	flex-direction: column;
-	flex-shrink: 0;
+	flex-shrink: 0;*/
   }
   .col-sm-7 {
     width: 58.33333333%;
