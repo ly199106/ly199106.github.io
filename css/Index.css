@@ -15,7 +15,9 @@ color: #FFFFFF;
 background-color: #fafafa;
 height: 60px;
 margin-bottom: 60px;
-
+}
+.article-title{
+padding: 15px 30px;
 }
 .navbar-nav li {
 width: 90px;
