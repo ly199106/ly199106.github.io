@@ -13,12 +13,11 @@ color: #FFFFFF;
 }
 .article {
 background-color: #fff;
+border: 1px solid #edeeee;
 height: 60px;
 margin-bottom: 60px;
 }
-.article-title{
-padding: 15px 30px;
-}
+
 .navbar-nav li {
 width: 90px;
 text-align: center;
