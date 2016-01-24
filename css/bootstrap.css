@@ -1791,6 +1791,8 @@ pre code {
   }
   .col-sm-9 {
     width: 75%;
+	background-color: #fff;
+	border: 1px solid #edeeee;
   }
   .col-sm-8 {
     width: 66.66666667%;
