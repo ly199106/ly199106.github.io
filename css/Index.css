@@ -24,6 +24,7 @@ color: #FFFFFF;
 .article {
 background-color: #fff;
 border: 1px solid #edeeee;
+border-radius: 3px;
 margin-bottom: 40px;
 }
 .article-title {

@@ -157,9 +157,11 @@ window.onload=function(){
                 var oPin=document.createElement('div'); //添加 元素节点
                 oPin.className='article';                   //添加 类名 name属性
                 oParent.appendChild(oPin);              //添加 子节点
-               // var oBox=document.createElement('div');
-                //oBox.className='box';
-                //oPin.appendChild(oBox);
+                var oBox=document.createElement('div');
+                oBox.className='post-list-header';
+				oBox.innerHTML='Post';
+                oPin.appendChild(oBox);
+				
                 var oImg=document.createElement('img');
                 oImg.src='/image/'+dataInt.data[i].src;
                 oPin.appendChild(oImg);
