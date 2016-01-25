@@ -163,7 +163,7 @@ window.onload=function(){
                 oBox.className='box';
                 oPin.appendChild(oBox);
                 var oImg=document.createElement('img');
-                oImg.src='/images/'+dataInt.data[i].src;
+                oImg.src='/image/'+dataInt.data[i].src;
                 oBox.appendChild(oImg);
             }
             //waterfall('main','pin');
