@@ -1,4 +1,14 @@
-
+/*≤‚ ‘”√*/
+.box {
+        padding: 10px;
+        border:1px solid #ccc;
+        box-shadow: 0 0 6px #ccc;
+        border-radius: 5px;
+    }
+.box img {
+        width:auto;
+        height:auto;
+    }
 footer span {
 color: #FFFFFF;
 }
