@@ -145,3 +145,34 @@ function generateContent() {
     }
     console.log("myAffix!!!");
 }
+/*加载单列瀑布流*/
+window.onload=function(){
+
+    var dataInt={'data':[{'src':'1.jpg'},{'src':'2.jpg'}]};
+    
+    window.onscroll=function(){
+        if(checkscrollside()){
+            var oParent = document.getElementById('post');// 父级对象
+            for(var i=0;i<dataInt.data.length;i++){
+                var oPin=document.createElement('div'); //添加 元素节点
+                oPin.className='article';                   //添加 类名 name属性
+                oParent.appendChild(oPin);              //添加 子节点
+                var oBox=document.createElement('div');
+                oBox.className='box';
+                oPin.appendChild(oBox);
+                var oImg=document.createElement('img');
+                oImg.src='/images/'+dataInt.data[i].src;
+                oBox.appendChild(oImg);
+            }
+            //waterfall('main','pin');
+        };
+    }
+}
+function checkscrollside(){
+    var oParent=document.getElementById('post');
+    var aPin=getClassObj(oParent,'article');
+    var lastPinH=aPin[aPin.length-1].offsetTop+Math.floor(aPin[aPin.length-1].offsetHeight/2);//创建【触发添加块框函数waterfall()】的高度：最后一个块框的距离网页顶部+自身高的一半(实现未滚到底就开始加载)
+    var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;//注意解决兼容性
+    var documentH=document.documentElement.clientHeight;//页面高度
+    return (lastPinH<scrollTop+documentH)?true:false;//到达指定高度后 返回true，触发waterfall()函数
+}
