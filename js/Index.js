@@ -159,7 +159,7 @@ window.onload=function(){
                 oParent.appendChild(oPin);              //添加 子节点
                 var oBox=document.createElement('div');
                 oBox.className='post-list-header';
-				oBox.innerHTML='Post';
+				oBox.innerHTML='{{ content }} ';
                 oPin.appendChild(oBox);
 				
                 var oImg=document.createElement('img');
