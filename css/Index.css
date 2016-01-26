@@ -32,7 +32,7 @@ text-align: center;
 /* post
  * post articles area
  */
- #posts ul li {
+#post ul li {
 	margin: 0px 10px 10px 0px;
 	width: 200px;
 	float: left;
