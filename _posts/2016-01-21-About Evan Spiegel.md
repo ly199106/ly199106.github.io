@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post
 title:  About Evan Spiegel
 date:   2016-01-21 
 categories: blog
