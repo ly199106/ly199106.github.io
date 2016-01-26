@@ -159,12 +159,12 @@ window.onload=function(){
                 oParent.appendChild(oPin);              //添加 子节点
                 var oBox=document.createElement('div');
                 oBox.className='post-list-header';
-				oBox.innerHTML='{{ content }} ';
+				oBox.innerHTML="{{ content }} ";
                 oPin.appendChild(oBox);
 				
-                var oImg=document.createElement('img');
-                oImg.src='/image/'+dataInt.data[i].src;
-                oPin.appendChild(oImg);
+                //var oImg=document.createElement('img');
+                //oImg.src='/image/'+dataInt.data[i].src;
+               // oPin.appendChild(oImg);
             }
             
         };
