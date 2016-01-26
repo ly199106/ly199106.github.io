@@ -32,6 +32,11 @@ text-align: center;
 /* post
  * post articles area
  */
+#posts ul {
+	list-style:none; 
+	margin: auto;
+	padding: 0px;
+}
 #post ul li {
 	margin: 0px 18px 18px 0px;
 	width: 170px;
