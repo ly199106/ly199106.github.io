@@ -52,17 +52,20 @@ text-align: center;
 #post ul li img {
 	width: 100%;
 }
-post-title {
+.posttitle {
 	margin: 0px 0px 8px 0px;
 	line-height: 20px;
-	font-size: 20px;padding: 10px;
+	font-size: 20px;
+	padding: 10px;
+	text-decoration: none;
+	color: #3a5795;
 }
 
 .post-image{
 	width: 250px;
 	box-shadow: 0 0px 0px #cccccc;
-	border-radius: 0px;
-    margin: 10px 0px 10px 0px;
+	border-radius: 3px;
+    margin: 0px 0px 10px 0px;
 }
 
 .post-date {
