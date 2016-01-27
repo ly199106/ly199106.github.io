@@ -83,8 +83,7 @@ text-align: center;
 }
 
 .post-content {
-	margin-top: 10px;
-	margin-bottom: 0px;
+	margin: 10px -10px -10px -10px;
 	font-size: 13px;
 	color: #fff;
     background-color: #3a5795;
