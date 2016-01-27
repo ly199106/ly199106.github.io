@@ -63,12 +63,14 @@ text-align: center;
 }
 .posttitle {
 	line-height: 20px;
-	font-size: 20px;
 	padding: 10px 20px 10px 0px;
 	text-decoration: none;
-	color: #33CC33;
+	
 }
-
+.posttitled {
+    font-size: 20px;
+    color: #33CC33;
+}
 .post-image{
 	width: 250px;
 	box-shadow: 0 0px 0px #cccccc;
