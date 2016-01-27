@@ -10,7 +10,7 @@ text-decoration: none;
 footer a:link {
 color: #FFFFFF;
 }
-h1 a:hover {
+div a:hover {
 text-decoration: none;
 }
 .article {

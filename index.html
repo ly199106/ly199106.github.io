@@ -11,12 +11,13 @@ layout: default
 		{% if post.image %}
 		  <a href='{{ post.url | prepend: site.baseurl }}'><img class='post-image' src="{{post.image}}" /></a>
 		{% endif %}
-		<div class="postcontent">
-		  <h1 class='posttitle'><a href='{{ post.url | prepend: site.baseurl }}'>{{post.title}}</a></h1>
-		<div class='post-date'>{{ post.date | date: "%B %d, %Y"}}</div>
-		  <div class='post-content'>{{post.summary}}        
-		  </div>
+		<div class="posttitle">
+		  <a href='{{ post.url | prepend: site.baseurl }}'>{{post.title}}</a>
 		</div>
+		<div class='post-date'>{{ post.date | date: "%B %d, %Y"}}
+		</div>
+		<div class='post-content'>{{post.summary}}        </div>
+		
 	   </li>
 					{% endfor %}
 				</ul>
