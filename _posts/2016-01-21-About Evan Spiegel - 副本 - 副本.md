@@ -3,7 +3,7 @@ layout: post
 title:  About Evan Spiegel
 date:   2016-01-21 
 categories: blog
-tags: [collection]  
+tags: [time]  
 summary: A question in Quora about Evan Spiegel
 image: /image/Evan Spiegel.jpg
 ---
