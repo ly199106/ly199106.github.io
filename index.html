@@ -25,8 +25,8 @@ layout: default
  	  {% for tag in site.tags %}
 		   <li class="postli" post-cate="{{tag | first}}">
 		  {% for posts in tag  %}
-	<!--	   {% for post in posts %}
-		  {% if post.image %}
+		   {% for post in posts %}
+	<!--	  {% if post.image %}
 		  <a href="{{ post.url | prepend: site.baseurl }}"><img class="post-image" src="{{post.image}}" /></a>
 		{% endif %}
 		<div class="posttitle">
