@@ -46,10 +46,9 @@ text-align: center;
 	margin: auto;
 	padding: 0px;
 }
-.postli {
+#post ul li {
 	margin: 0px 15px 20px 15px;
 	width: 170px;
-	height: auto;
 	float: left;
 	border-radius: 3px;
     padding: 10px;
@@ -60,7 +59,7 @@ text-align: center;
 }
 
 #post ul li img {
-	
+	width: 100%;
 }
 .posttitle {
 	line-height: 20px;
@@ -73,7 +72,7 @@ text-align: center;
     color: #44A340;
 }
 .post-image{
-	width: 100%;
+	width: 250px;
 	box-shadow: 0 0px 0px #cccccc;
 	border-radius: 3px;
     margin: 0px 0px 10px 0px;

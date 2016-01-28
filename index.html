@@ -4,38 +4,8 @@ layout: default
   <div class="row">
     <div  class="col-sm-2">
 	</div> 
-	<div class="col-sm-8">
-	  <div class="post-list-body" id="post">
-	    
-		  {% for post in site.tags.blog %} 
-		  <div class="postli">
-		  {% if post.image %}
-		  <a href='{{ post.url | prepend: site.baseurl }}'><img class='post-image' src="{{post.image}}" /></a>
-		  </div>
-		{% endif %}
-		  
-		  {% endfor %} 
-		
-	  </div>
-    </div>
-	   <div  class="col-sm-2">
-	     <div class="shadow-corner-curl hidden-xs">
-         <div class="categories-list-header">
-          Categories
-         </div>
-      
-      <a href="{{'/index.html' | prepend: site.baseurl}}" class="categories-list-item" cate="All">
-        All<span class="my-badge"> {{site.posts | size}}</span>
-      </a>
-      {% for category in site.categories order:ascending %}
-        <a href="javascript:;" class="categories-list-item" cate="{{ category | first }}">
-          {{ category| first }} <span class="my-badge">{{ category | last | size }}</span>
-        </a>
-      {% endfor %}
-    </div>
-	   </div>
-	   </div>
-<!--	  <ul class="post-list-body">
+	<div class="col-sm-8" id="post">
+	  <ul class="post-list-body">
 	  
 	  {% for post in site.tags.blog %}
 	    <li class="postli" post-cate="All">
@@ -75,7 +45,45 @@ layout: default
 		  
 		  {% endfor %} 
 		 </ul>  -->
+	   
+    </div>
+	   <div  class="col-sm-2">
+	     <div class="shadow-corner-curl hidden-xs">
+         <div class="categories-list-header">
+          Categories
+         </div>
+      
+      <a href="{{'/index.html' | prepend: site.baseurl}}" class="categories-list-item" cate="All">
+        All<span class="my-badge"> {{site.posts | size}}</span>
+      </a>
+      {% for category in site.categories order:ascending %}
+        <a href="javascript:;" class="categories-list-item" cate="{{ category | first }}">
+          {{ category| first }} <span class="my-badge">{{ category | last | size }}</span>
+        </a>
+      {% endfor %}
+    </div>
+	   </div>
+	   </div>
 
 
 
 
+<!--<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  
+
+</div> -->
