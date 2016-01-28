@@ -29,10 +29,10 @@ layout: default
 		  {% if post.image %}
 		  <a href="{{ post.url | prepend: site.baseurl }}"><img class="post-image" src="{{post.image}}" /></a>
 		{% endif %}
-	<!--	<div class="posttitle">
+		<div class="posttitle">
 		  <a href="{{ post.url | prepend: site.baseurl }}"><span class="posttitled">{{post.title}}</span></a>
 		</div>
-		<div class="post-date">{{ post.date | date: "%B %d, %Y"}}
+	<!--	<div class="post-date">{{ post.date | date: "%B %d, %Y"}}
 		</div>
 		<div class="post-content">{{post.summary}}        </div> -->
 		{% endfor %}
