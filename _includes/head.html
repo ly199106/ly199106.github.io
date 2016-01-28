@@ -21,9 +21,9 @@
 		<script type="text/javascript">
 			hljs.initHighlightingOnLoad();
 			function applyTiles() {
-				var posts = $('#post ul');
+				var posts = $('#post div');
 				posts.imagesLoaded(function() {
-					$('#post ul').masonry({ itemSelector : '.postli' });;
+					$('#post div').masonry({ itemSelector : '.postli' });;
 				});
 			}
 			$(function() {
