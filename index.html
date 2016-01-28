@@ -4,12 +4,12 @@ layout: default
   <div class="row">
     <div  class="col-sm-2">
 	</div> 
-	<div class="col-sm-8" class="post-list-body">
-	  <div  post-cate="All">
-	  <ul id="post">
+	<div class="col-sm-8" id="post">
+	  <div class="post-list-body">
+	  <ul>
 	  
 	  {% for post in site.tags.blog %}
-	    <li class="postli" >
+	    <li class="postli" post-cate="All">
 		{% if post.image %}
 		  <a href='{{ post.url | prepend: site.baseurl }}'><img class='post-image' src="{{post.image}}" /></a>
 		{% endif %}
@@ -24,12 +24,10 @@ layout: default
 	  {% endfor %} 
 	  
 	   </ul> 
-	   </div>
-	   <div  post-cate="{{category | first}}"> 
-	   <ul id="post">
+	   <ul class="post-list-body">
 	   {% for category in site.categories %}
 	   
-		   <li class="postli">
+		   <li class="postli" post-cate="{{category | first}}">
 		    {% for posts in category  %}
               {% for post in posts %}
 		  
@@ -47,8 +45,7 @@ layout: default
 		 </li>
 		  
 		  {% endfor %} 
-		 </ul> 
-		 </div> 
+		 </ul>  
 	   
     </div>
 	   <div  class="col-sm-2">
