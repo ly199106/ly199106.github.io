@@ -22,9 +22,8 @@ layout: default
 	   </li>
 	  {% endfor %} 
 		
- 	  
-	   {% for posts in tag  %}
-		{% for post in posts %} 
+ 	  {% for tag in site.tags %}
+	  
 		   <li class="postli" post-cate="{{tag | first}}">
 		  
 		  
@@ -39,9 +38,8 @@ layout: default
 		<div class="post-content">{{post.summary}}        </div> 
 		
 		 </li>
-		   {% endfor %}
+		   
 		  {% endfor %} 
-		
 		  
 		  
 	   </ul>
