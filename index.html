@@ -23,9 +23,11 @@ layout: default
 	  {% endfor %} 
 		
  	  {% for tag in site.tags %}
+	   {% for posts in tag  %}
+		{% for post in posts %} 
 		   <li class="postli" post-cate="{{tag | first}}">
 		  
-		 
+		  
 		    
 		  <a href="{{ post.url | prepend: site.baseurl }}"><img class="post-image" src="{{post.image}}" /></a>
 		
@@ -37,6 +39,8 @@ layout: default
 		<div class="post-content">{{post.summary}}        </div> 
 		
 		 </li>
+		   {% endfor %}
+		  {% endfor %} 
 		  {% endfor %} 
 		  
 		  
