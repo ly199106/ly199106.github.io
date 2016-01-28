@@ -7,7 +7,7 @@ layout: default
 	<div class="col-sm-8" id="post">
 	  <ul class="post-list-body">
 	  
-	  {% for post in site.categories.blog %}
+	  {% for post in site.tags.blog %}
 	    <li class="postli" post-cate="All">
 		{% if post.image %}
 		  <a href='{{ post.url | prepend: site.baseurl }}'><img class='post-image' src="{{post.image}}" /></a>
@@ -22,11 +22,11 @@ layout: default
 	   </li>
 	  {% endfor %} 
 		
- 	  {% for tag in site.tags %}
+ 	   {% for category in site.categories %}
 	   
-		{% for post in posts %} 
-		   <li class="postli" post-cate="{{tag | first}}">
-		  
+		   <li class="postli" post-cate="{{category | first}}">
+		    {% for posts in category  %}
+              {% for post in posts %}
 		  
 		    
 		  <a href="{{ post.url | prepend: site.baseurl }}"><img class="post-image" src="{{post.image}}" /></a>
@@ -37,10 +37,10 @@ layout: default
 		<div class="post-date">{{ post.date | date: "%B %d, %Y"}}
 		</div>
 		<div class="post-content">{{post.summary}}        </div> 
-		
+		 {% endfor %}
+		  {% endfor %} 
 		 </li>
-		   {% endfor %}
-		 
+		  
 		  {% endfor %} 
 		  
 		  
@@ -50,15 +50,15 @@ layout: default
 	   <div  class="col-sm-2">
 	     <div class="shadow-corner-curl hidden-xs">
          <div class="categories-list-header">
-         Tags
+          Categories
          </div>
       
       <a href="{{'/index.html' | prepend: site.baseurl}}" class="categories-list-item" cate="All">
         All<span class="my-badge"> {{site.posts | size}}</span>
       </a>
-      {% for tag in site.tags order:ascending %}
+      {% for  category in site.categories order:ascending %}
         <a href="javascript:;" class="categories-list-item" cate="{{ tag | first }}">
-          {{ tag | first }} <span class="my-badge">{{ tag | last | size }}</span>
+          {{ category| first }} <span class="my-badge">{{ category | last | size }}</span>
         </a>
       {% endfor %}
     </div>
