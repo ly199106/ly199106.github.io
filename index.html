@@ -5,10 +5,10 @@ layout: default
     <div  class="col-sm-2">
 	</div> 
 	<div class="col-sm-8" id="post">
-	  <div class="post-list-body">
+	  <ul class="post-list-body">
 	  
 	  {% for post in site.categories.blog %}
-	    <div class="postdiv" post-cate="All">
+	    <li class="postli" post-cate="All">
 		{% if post.image %}
 		  <a href='{{ post.url | prepend: site.baseurl }}'><img class='post-image' src="{{post.image}}" /></a>
 		{% endif %}
@@ -19,11 +19,11 @@ layout: default
 		</div>
 		<div class="post-content">{{post.summary}}        </div>
 		
-	   </div>
+	   </li>
 					{% endfor %}
 		
 		  {% for tag in site.tags %}
-		   <div class="postli" post-cate="{{tag | first}}">
+		   <li class="postli" post-cate="{{tag | first}}">
 		  {% for posts in tag  %}
 		   {% for post in posts %}
 		  {% if post.image %}
@@ -37,10 +37,10 @@ layout: default
 		<div class="post-content">{{post.summary}}        </div>
 		{% endfor %}
 		{% endfor %}
-		 </div>
+		 </li>
 		  {% endfor %}
 		  
-	   </div>
+	   </ul>
 	   
     </div>
 	   <div  class="col-sm-2">
