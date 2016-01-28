@@ -22,7 +22,7 @@ layout: default
 	   </li>
 					{% endfor %}
 		
-		  
+		  {% for tag in site.tags %}
 		   <li class="postli" post-cate="{{tag | first}}">
 		  
 		  {% if post.image %}
@@ -35,7 +35,7 @@ layout: default
 		</div>
 		<div class="post-content">{{post.summary}}        </div>
 		 </li>
-		 
+		  {% endfor %}
 		  
 	   </ul>
 	   
