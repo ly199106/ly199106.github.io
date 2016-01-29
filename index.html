@@ -26,13 +26,14 @@ layout: default
 	  
 	   </ul>	 
 	   </div>
+	    {% for category in site.categories %}
 	  <div id="post" post-cate="{{category | first}}">
 	    <ul>
-	   {% for category in site.categories %}
+	   {% for posts in category  %}
+              {% for post in posts %}
 	   
 		   <li class="postli" >
-		    {% for posts in category  %}
-              {% for post in posts %}
+		   
 		  
 		    
 		  <a href="{{ post.url | prepend: site.baseurl }}"><img class="post-image" src="{{post.image}}" /></a>
