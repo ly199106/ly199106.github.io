@@ -28,10 +28,10 @@ layout: default
 	   </div>  
 	   {% for category in site.categories %}
 	  <div id="post" post-cate="{{category | first}}">
-	{% for posts in category  %}
-        {% for post in posts %}
+	
 	    <ul>
-		   
+		  {% for posts in category  %}
+        {% for post in posts %} 
 		<li class="postli">
 		{% if post.image %}
 		  <a href="{{ post.url | prepend: site.baseurl }}"><img class="post-image" src="{{post.image}}" /></a>
@@ -44,10 +44,10 @@ layout: default
 		<div class="post-content">{{post.summary}}        </div> 
 		 
 		 </li>
-		   
+		   {% endfor %}
+		  {% endfor %}
 		 </ul> 
-		 {% endfor %}
-		  {% endfor %} 
+		  
 		</div>
 		{% endfor %}  
 	   </div>
