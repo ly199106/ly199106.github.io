@@ -4,8 +4,8 @@ layout: default
   <div class="row">
     <div  class="col-sm-2">
 	</div> 
-	<div class="col-sm-8" id="post">
-	  <ul class="post-list-body">
+	<div class="col-sm-8">
+	  <ul class="post-list-body" id="post">
 	  
 	  {% for post in site.tags.blog %}
 	    <li class="postli" post-cate="All">
@@ -22,8 +22,8 @@ layout: default
 	   </li>
 	  {% endfor %} 
 	  
-	   </ul> -->
-	   <ul class="post-list-body">
+	   </ul> 
+<!--	   <ul class="post-list-body">
 	   {% for category in site.categories %}
 	   
 		   <li class="postli" post-cate="{{category | first}}">
@@ -44,7 +44,7 @@ layout: default
 		 </li>
 		  
 		  {% endfor %} 
-		 </ul>  
+		 </ul>  -->
 	   
     </div>
 	   <div  class="col-sm-2">
