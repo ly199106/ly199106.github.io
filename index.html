@@ -23,13 +23,11 @@ layout: default
 		
 	   </li>
 	  {% endfor %} 
-	  
 	   </ul>	 
 	   </div>
+	   {% for category in site.categories %}
 	  <div id="post" post-cate="{{category | first}}">
 	    <ul>
-	   {% for category in site.categories %}
-	   
 		   <li class="postli" >
 		    {% for posts in category  %}
               {% for post in posts %}
