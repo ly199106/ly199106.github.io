@@ -26,11 +26,10 @@ layout: default
 	  
 	   </ul>	 
 	   </div>
+	   {% for category in site.categories %}
 	  <div id="post" post-cate="{{category | first}}">
 	    <ul>
-	   {% for category in site.categories %}
-	   
-		   <li class="postli" >
+	   		   <li class="postli" >
 		    {% for posts in category  %}
               {% for post in posts %}
 		  
@@ -46,10 +45,10 @@ layout: default
 		 {% endfor %}
 		  {% endfor %} 
 		 </li>
-		  
-		  {% endfor %} 
+		   
 		 </ul> 
 		</div>
+		{% endfor %}
 	   </div>
     </div>
 	   <div  class="col-sm-2">
