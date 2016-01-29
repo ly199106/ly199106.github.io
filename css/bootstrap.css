@@ -1795,11 +1795,7 @@ pre code {
   }
   .col-sm-8 {
     width: 66.66666667%;
-	box-sizing: border-box;
-	-webkit-box-align: stretch;
-	align-items: stretch;
-	flex-direction: column;
-	flex-shrink: 0;
+	
   }
   .col-sm-7 {
     width: 58.33333333%;
