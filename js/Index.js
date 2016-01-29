@@ -119,9 +119,9 @@ function backToTop() {
     });
 
     //≥ı ºªØtip
-    $(function() {
-        $('[data-toggle="tooltip"]').tooltip();
-    });
+  //  $(function() {
+     //   $('[data-toggle="tooltip"]').tooltip();
+   // });
 }
 
 
