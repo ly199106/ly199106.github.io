@@ -33,7 +33,7 @@ layout: default
 	    <ul>
 		   
 		<li class="postli">
-	<!--	{% if post.image %}
+		{% if post.image %}
 		  <a href="{{ post.url | prepend: site.baseurl }}"><img class="post-image" src="{{post.image}}" /></a>
 		{% endif %} 
 		<div class="posttitle">
@@ -41,7 +41,7 @@ layout: default
 		</div> 
 		<div class="post-date">{{ post.date | date: "%B %d, %Y"}}
 		</div>
-		<div class="post-content">{{post.summary}}        </div> -->
+		<div class="post-content">{{post.summary}}        </div> 
 		 
 		 </li>
 		   
