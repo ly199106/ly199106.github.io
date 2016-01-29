@@ -6,7 +6,7 @@ layout: default
 	</div> 
 	<div class="col-sm-8">
 	  <div class="post-list-body">
-	    <div id="post" post-cate="All"> 
+<!--	    <div id="post" post-cate="All"> 
 	      <ul>
 	  
 	  {% for post in site.tags.blog %}
@@ -25,14 +25,14 @@ layout: default
 	  {% endfor %} 
 	  
 	   </ul>	 
-	   </div>  
+	   </div>  -->
 	   {% for category in site.categories %}
 	  <div id="post" post-cate="{{category | first}}">
 	
 	    <ul>
 		  {% for posts in category  %}
               {% for post in posts %} 
-		<li class="postli" >
+		<li class="postli">
 		{% if post.image %}
 		  <a href="{{ post.url | prepend: site.baseurl }}"><img class="post-image" src="{{post.image}}" /></a>
 		{% endif %}
