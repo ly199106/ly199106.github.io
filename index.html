@@ -30,8 +30,9 @@ layout: default
 	  <div id="post" post-cate="{{category | first}}">
 	
 	    <ul>
+		{% for post in posts %} 
 		  {% for posts in category  %}
-              {% for post in posts %} 
+              
 		<li class="postli" >
 		{% if post.image %}
 		  <a href="{{ post.url | prepend: site.baseurl }}"><img class="post-image" src="{{post.image}}" /></a>
