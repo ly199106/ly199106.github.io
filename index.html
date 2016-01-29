@@ -29,11 +29,9 @@ layout: default
 	   {% for category in site.categories %}
 	  <div id="post" post-cate="{{category | first}}">
 	    <ul>
-	   		   <li class="postli" >
-		    {% for posts in category  %}
+		 {% for posts in category  %}
               {% for post in posts %}
-		  
-		    
+		<li class="postli" >
 		  <a href="{{ post.url | prepend: site.baseurl }}"><img class="post-image" src="{{post.image}}" /></a>
 		
 		<div class="posttitle">
@@ -42,10 +40,10 @@ layout: default
 		<div class="post-date">{{ post.date | date: "%B %d, %Y"}}
 		</div>
 		<div class="post-content">{{post.summary}}        </div> 
-		 {% endfor %}
-		  {% endfor %} 
+		 
 		 </li>
-		   
+		   {% endfor %}
+		  {% endfor %} 
 		 </ul> 
 		</div>
 		{% endfor %}
