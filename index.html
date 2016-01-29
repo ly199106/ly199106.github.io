@@ -31,7 +31,6 @@ layout: default
 	{% for posts in category  %}
         {% for post in posts %}
 	    <ul>
-		   
 		<li class="postli">
 		{% if post.image %}
 		  <a href="{{ post.url | prepend: site.baseurl }}"><img class="post-image" src="{{post.image}}" /></a>
