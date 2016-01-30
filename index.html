@@ -9,16 +9,17 @@ layout: default
 	   {% for category in site.categories %}
 	  <div id="post" post-cate="{{category | first}}">
         <ul>   
-		 	{% for posts in category  %}
-        {% for post in posts %}
+	<!--	 	{% for posts in category  %}
+        {% for post in posts %} -->
          <li class="postli">		
-		 <a href="{{ post.url | prepend: site.baseurl }}" class="post-list-item">
+		 1234567
+	<!--	 <a href="{{ post.url | prepend: site.baseurl }}" class="post-list-item">
                     <h2>
                     {{ post.title }}
                     </h2>
                     <span class="">{{ post.date | date: "%b %-d, %Y" }}</span><br>
 					<span>{{post.summary}}</span>
-                  </a> 
+                  </a> -->
 	        </li>
 		
 <!--		{% if post.image %}
@@ -33,9 +34,9 @@ layout: default
 		 
 		 
 		  		 
-		 {% endfor %}
-		  {% endfor %}
-		  </ul> 
+	<!--	 {% endfor %}
+		  {% endfor %}-->
+		  		  </ul> 
 		</div> 
 		{% endfor %} 
 	    <div id="post" post-cate="All"> 
