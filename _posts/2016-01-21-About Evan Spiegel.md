@@ -2,7 +2,7 @@
 layout: post
 title:  About Evan Spiegel
 date:   2016-01-21 
-categories: when
+categories: 杂谈
 tags: [blog]  
 summary: A question in Quora about Evan Spiegel
 image: /image/Evan Spiegel.jpg

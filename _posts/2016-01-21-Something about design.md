@@ -2,9 +2,9 @@
 layout: post
 title:  关于模板二三事
 date:   2016-01-30 
-categories: design
+categories: 设计
 tags: [blog]  
-summary: 关于这两天设计这模板我也是醉了……
+summary: 关于这两天设计这模板我也是醉了……（还能不能愉快的写东西啦o(╯□╰)o））
 image: /image/Wunai.jpg
 ---
 
