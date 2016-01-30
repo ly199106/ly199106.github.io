@@ -7,7 +7,7 @@ layout: default
 	<div class="col-sm-8">
 	  <div class="post-list-body">
 	   {% for category in site.categories %}
-	  <div id="post" post-cate="{{category | first}}">
+	  <div id="posts" post-cate="{{category | first}}">
         <ul>   
 	<!--	 	{% for posts in category  %}
         {% for post in posts %} -->
@@ -38,7 +38,7 @@ layout: default
 		  		  </ul> 
 		</div> 
 		{% endfor %} 
-	    <div id="post" post-cate="All"> 
+	    <div id="posts" post-cate="All"> 
 	      <ul>
 	  
 	  {% for post in site.tags.blog %}
