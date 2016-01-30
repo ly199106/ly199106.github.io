@@ -3,6 +3,9 @@ layout: post
 title:  "How to judge whether the input is an array"
 date:   2016-01-20 
 categories: Javascript
+tags: [blog]  
+summary: My first learning note of Baidu-ife
+image: /image/JS.jpg
 ---
 OK,it is my first note-book blog,I've write in English because currently I don't know how to write jekyll blog in Chinese.When I tried to write something on it in Chinese,I sadly find the part in Chinese can not be displayed on the screen.There must be something wrong with my default settings with jekyll(I promise I will solve this problem some days later).Now that it can only be noted in English,I would rather see it as a chance to improve my English writting.
 
