@@ -1,3 +1,11 @@
+navbar-headerimg {
+width: 45px;
+height: 45px;
+border-radius: 45px;
+}
+navbar-headerlogo {
+color: #fff;
+}
 footer span {
 color: #FFFFFF;
 }
