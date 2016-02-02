@@ -23,5 +23,5 @@ image: /image/begin again.jpg
 
 我希望我的这位朋友也能尽快想明白这点，找准方向，再次出发，青春，可以迷茫，但不能不迈出新的一步。
 
-![begin again.jpg](/image/begin again.jpg)
+![begin again.jpg](/image/departure.jpg)
 
