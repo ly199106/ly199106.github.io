@@ -3,6 +3,11 @@ width: 42px;
 height: 42px;
 border-radius: 42px;
 border:2px solid #fff;
+transition:1.5s ease;
+-webkit-transition:1.5s ease;
+-moz-transition:1.5s ease;
+-o-transition:1.5s ease;
+
 }
 .navbar-headerimg:hover {
 	-webkit-transform: rotateY(360deg);
