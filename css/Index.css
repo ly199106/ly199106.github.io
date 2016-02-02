@@ -1,9 +1,9 @@
-navbar-headerimg {
+.navbar-headerimg {
 width: 45px;
 height: 45px;
 border-radius: 45px;
 }
-navbar-headerlogo {
+.navbar-headerlogo {
 color: #fff;
 }
 footer span {
