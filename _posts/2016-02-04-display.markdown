@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: display:inline、block、inline-block的区别
-date:   2016-02-02 
+date:   2016-02-04 
 categories: CSS
 tags: [blog]  
 summary: block,inline和inline-block
