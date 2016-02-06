@@ -1,11 +1,11 @@
----
+﻿---
 layout: post
-title: display:inline、block、inline-block的区别
+title: margin-top
 date:   2016-02-02 
 categories: CSS
 tags: [blog]  
 summary: block,inline和inline-block
-image: /image/css-logo.png
+image: /image/demo.png
 ---
 display:block就是将元素显示为块级元素.
 
