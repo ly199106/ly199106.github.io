@@ -1,0 +1,181 @@
+@import compass
+
+$imgPath: '../img/'
+
+=size($h, $w)
+    height: $h
+    width: $w
+
+=square($size)
+    +size($size, $size)
+
+=line-height($h)
+    height: $h
+    line-height: $h
+
+=icon($icon, $height, $width, $suffix: png)
+    $height: $height / 2
+    $width: $width / 2
+    +inline-block
+    +size($height, $width)
+    background: url($imgPath + $icon + '.' + $suffix) no-repeat
+    +background-size($width, $height)
+    overflow: hidden
+
+=link-color($color)
+    +link-colors($color, $color, $color, $color, $color)
+
+$white: #fff
+$black: #333
+$grey: #666
+$lightGrey: #999
+$red: #c7254e
+$orange: #ff6501
+$blue: #5bc0de
+$darkBlue: darken($blue, 15%)
+$whiteBlue: mix($white, $blue, 75%)
+$lightBlueBg: mix($white, $blue, 90%)
+
+$border: 1px solid #ddd
+
+.mod
+    margin-bottom: 50px
+    .hd
+        font-size: 24px
+        font-weight: bold
+        margin-bottom: 20px
+        line-height: 1
+
+.ts
+    margin-left: 2em
+.ts2
+    margin-left: 4em
+.mr5
+    margin-right: 5px !important
+
+.sub-params
+    th, td
+        &:first-child
+            border-left: none
+
+body
+    position: relative
+    padding-top: 50px
+
+iframe
+    border: none
+    width: 100%
+
+h1, h2
+    margin-top: 40px
+
+ul, ol
+    padding: 0
+    margin-bottom: 0
+    &, li
+        list-style: none
+        padding: 0
+        margin: 0
+
+#header
+    background: $blue
+    border-color: $darkBlue
+    .navbar-collapse, .navbar-form
+        border-color: $darkBlue
+    .navbar-toggle
+        border-color: $darkBlue
+        &:hover, &:focus
+            background-color: $darkBlue
+        &.collapsed
+            .icon-bar
+                background: $white
+    .navbar-brand
+        +link-color($white)
+        font-weight: bold
+    .navbar-nav
+        height: 50px
+        a
+            +line-height(50px)
+            +link-color($whiteBlue)
+            +box-sizing(border-box)
+            padding: 0 15px
+            background: transparent
+            &:hover
+                +line-height(51px)
+                +link-color($white)
+                border-bottom: 3px solid $red
+        .active a
+            +link-color($white)
+            background: $darkBlue
+            &:hover
+                border-bottom: none
+    .container
+        position: relative
+    .github
+        +inline-block
+        position: absolute
+        top: 50px
+        right: 15px
+        background: $red
+        color: $white
+        border-top: none
+        padding: 10px 15px
+        i
+            +icon('github', 32px, 32px)
+            margin-right: 10px
+
+.jumbotron
+    h1
+        em
+            color: $red
+            font-style: normal
+        span
+            color: $blue
+    .advantages
+        padding: 20px 0 0 50px
+        margin: 35px 0 0 0
+        border-top: 2px dashed $blue
+        .glyphicon-ok
+            color: $blue
+            margin-right: 20px
+
+.bs-footer
+    padding-top: 40px
+    padding-bottom: 30px
+    margin-top: 100px
+    color: $grey
+    border-top: 1px solid #e5e5e5
+    .copyright
+        a
+            margin-left: 15px
+
+.simple-player
+    +inline-block
+    +line-height(50px)
+    margin-bottom: 30px
+    width: 350px
+    position: relative
+    border: 1px solid $blue
+    cursor: pointer
+    .play-btn
+        +icon('play', 24px, 24px)
+        margin: 0 15px
+    &.playing
+        .play-btn
+            background-image: url($imgPath + 'pause.png')
+    .play-progress
+        +opacity(0.3)
+        +size(100%, 0)
+        position: absolute
+        left: 0
+        top: 0
+        background: $blue
+
+pre.language-javascript
+    font-size: 14px
+    padding-bottom: 1.2em
+    &.hotfix
+        padding-top: 1.8em
+        padding-bottom: 1.8em
+        code
+            top: -12px

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>MuPlayer『百度音乐播放内核』</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/prism/themes/prism.css">
+    <link rel="stylesheet" href="bower_components/prism/plugins/line-numbers/prism-line-numbers.css">
+    <link rel="stylesheet" href="css/demo.css">
+</head>
+<body>
+    <header id="header" class="navbar navbar-fixed-top" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">MuPlayer</a>
+            </div>
+            <nav class="collapse navbar-collapse navbar-ex1-collapse" role="navigation">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">首页</a></li>
+                    <li class="active"><a href="#">示例</a></li>
+                    <li><a href="api.html">API文档</a></li>
+                </ul>
+            </nav>
+            <a class="github" target="_blank" href="https://github.com/Baidu-Music-FE/muplayer"><i></i>View On GitHub</a>
+        </div>
+    </header>
+
+    <section class="jumbotron">
+        <div class="container">
+            <h1><em>Mu</em><span>Player</span> <small>Demo for Testing</small></h1>
+            <p> —— 跨平台、轻量级的音频播放解决方案。</p>
+            <p>本页提供了MuPlayer的基本调用Demo，方便学习参考及简单测试。</p>
+        </div>
+    </section>
+
+    <section id="content" class="container">
+        <div class="mod">
+            <div class="hd">快速上手</div>
+            <div class="bd">
+                <p>
+                    使用MuPlayer首先要引入MuPlayer对应版本的JS文件。你可以直接从
+                    <a target="_blank" href="https://github.com/Baidu-Music-FE/muplayer/tree/master/dist">github上</a>下载，
+                    或使用<a target="_blank" href="http://bower.io/">Bower</a>下载编译后的MuPlayer静态文件，并托管在自己的静态服务器上。
+                    同时，你也可以如下面例子中展示的那样，直接使用我们放在百度音乐CDN上的对应版本的静态资源文件。
+                </p>
+                <p>
+                    在网站加载jQuery类库的后面，引入MuPlayer。之后便可以初始化一个MuPlayer实例（ <code>baseDir</code> 是必填初始化参数，指向刚才签出的MuPlayer静态资源目录），添加一段mp3音频，开始播放：
+                </p>
+                <pre class="line-numbers"><code class="language-javascript">
+&lt;script src="http://code.jquery.com/jquery-1.11.0.min.js"&gt;&lt;/script&gt;
+&lt;!- 引入对应版本的MuPlayer，要置于jQuery之后。-&gt;
+&lt;script src="http://mu7.bdstatic.com/cms/app/muplayer/0_9_2/player.js"&gt;&lt;/script&gt;
+
+&lt;script&gt;
+    // 初始化一个MuPlayer的实例。注意，我们默认使用了_mu全局命名空间。
+    var player = new _mu.Player({
+        // baseDir是必填初始化参数，指向刚才签出的MuPlayer静态资源目录
+        baseDir: 'http://mu7.bdstatic.com/cms/app/muplayer/0_9_1/'
+    });
+
+    // 通过add方法添加需要播放的音频，并调用play方法开始播放。
+    player.add('http://music.baidu.com/cms/app/muplayer/test_mp3/1.mp3').play();
+&lt;/script&gt;
+                </code></pre>
+            </div>
+        </div>
+
+        <iframe id="ifm-playlist-demo" scrolling="no" src="playlist-demo.html"></iframe>
+        <iframe id="ifm-player-demo" scrolling="no" src="player-demo.html"></iframe>
+        <iframe id="ifm-equalizer-demo" scrolling="no" src="equalizer-demo.html"></iframe>
+    </section>
+
+    <footer class="bs-footer">
+        <div class="container">
+            <p><code>MuPlayer</code>: <a target="_blank" href="https://github.com/Baidu-Music-FE/muplayer">https://github.com/Baidu-Music-FE/muplayer</a></p>
+            <p class="copyright">
+                Copyright (c) 2014<a target="_blank" href="http://labs.music.baidu.com">
+                @MusicLab</a><a target="_blank" href="http://weibo.com/musicfe">@音乐前端</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/prism/prism.js"></script>
+    <script src="bower_components/prism/plugins/line-numbers/prism-line-numbers.min.js"></script>
+
+    <div style="display: none">
+        <script>
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F89a467ff5d4c7c906a933623c7db27bb'%3E%3C/script%3E"));
+
+        try {
+            if (console && console.log) {
+                console.log('加入百度音乐前端，跟我们做些有挑战的趣事？');
+                console.info && console.info('简历请发 %c musicfe-hr@baidu.com', 'color: #c7254e');
+            }
+        } catch (e) {}
+        </script>
+    </div>
+</body>
+</html>
