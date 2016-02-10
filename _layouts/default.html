@@ -22,10 +22,9 @@
 <script id="code">
 require.config({
     paths: {
-        muplayer: 'muplayer/dist' // 须指向muplayer.js存放的目录
-    }
+        muplayer: 'muplayer/dist'     }
 });
-// 通过AMD方式加载muplayer
+
 require([
     'muplayer/player'
 ], function(Player) {
@@ -51,7 +50,7 @@ require([
         $volume = $player.find('.volume'),
         $progress = $player.find('.progress-bar'),
         $avatar = $player.find('.avatar'),
-        // 监听播放时派发的timeupdate事件以更新播放进度条等相关UI
+       
         handleTimeupdate = function() {
             var pos = player.curPos(),
                 duration = player.duration();
@@ -63,8 +62,7 @@ require([
         'mp3/rain.mp3',
         'mp3/walking.mp3'
     ]);
-    // 在各个按钮上监听点击事件，触发时改变按钮的对应样式，并执行player的相应方法
-    $ctrlBtn.click(function() {
+        $ctrlBtn.click(function() {
         if ($ctrlIcon.hasClass('glyphicon-play')) {
             $ctrlIcon.removeClass('glyphicon-play').addClass('glyphicon-pause');
             player.play();
@@ -113,22 +111,22 @@ require([
             $(ui.handle).blur();
         }
     });
-    // 通过jquery-ui的slider组件实现播放进度条的交互
+   
     $progress.slider({
         range: 'min',
         max: 1000,
         disabled: true,
         start: function() {
-            // 为了使拖动操作不受打断，进度条拖动操作开始时即暂停对timeupdate事件的监听
+           
             player.off('timeupdate');
         },
         stop: function(e, ui) {
-            // 拖动结束时再恢复对timeupdate事件的监听
+            
             player.on('timeupdate', handleTimeupdate).play(ui.value * player.duration());
             $(ui.handle).blur();
         }
     });
-    // 事件驱动的UI：即UI应监听player派发的事件，以决定是否切换到对应的状态
+    
     player.on('player:play', function() {
         $progress.slider('enable');
         $ctrlIcon.removeClass('glyphicon-play').addClass('glyphicon-pause');
