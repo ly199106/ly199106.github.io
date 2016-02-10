@@ -64,7 +64,32 @@ layout: default
           {{ category| first }} <span class="my-badge">{{ category | last | size }}</span>
         </a>
       {% endfor %}
-    </div>
+         </div>
+		  <div id="player-demo">
+            <div class="player-widget">
+                <div class="opts">
+                    <span class="prev">
+                        <i class="glyphicon glyphicon-step-backward"></i>
+                    </span>
+                    <span class="ctrl">
+                        <i class="glyphicon glyphicon-play"></i>
+                    </span>
+                    <span class="next">
+                        <i class="glyphicon glyphicon-step-forward"></i>
+                    </span>
+                    <span class="mode"><i class="glyphicon glyphicon-repeat"></i></span>
+                </div>
+                <div class="volume">
+                    <i class="glyphicon glyphicon-volume-down"></i><span class="bar"></span>
+                </div>
+                <a class="avatar" href="javascript:;">
+                    <img alt="" src="/muplayer/src/doc/img/default.jpg">
+                </a>
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+
+		 
 	   </div>
 	   </div>
 
