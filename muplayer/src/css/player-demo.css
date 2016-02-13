@@ -310,7 +310,7 @@ body {
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 1px;
   box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 1px;
   margin-bottom: 20px;
-  width: 320px;
+  width: 265px;
   background: #5bc0de;
   position: relative;
   padding-bottom: 3px;
@@ -328,10 +328,10 @@ body {
 }
 #player-demo .opts {
   padding-left: 12px;
-  position: absolute;
   left: 0;
   top: 50%;
-  margin-top: -17.5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 #player-demo .opts > span {
   cursor: pointer;
@@ -371,7 +371,7 @@ body {
 }
 #player-demo .volume {
   position: absolute;
-  left: 140px;
+  left: 130px;
   top: 50%;
   margin-top: -10px;
 }
