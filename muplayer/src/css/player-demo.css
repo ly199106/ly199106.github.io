@@ -373,16 +373,16 @@ body {
   position: absolute;
   left: 130px;
   top: 50%;
-  margin-top: -10px;
+  margin-top: -13px;
 }
 #player-demo .volume i {
   width: 1.2em;
   text-align: left;
-  color: #ff6501;
+  color: #fff;
   cursor: pointer;
 }
 #player-demo .volume i:hover {
-  color: #ff6501;
+  color: #d6eff6;
 }
 #player-demo .volume.mute .bar, #player-demo .volume.mute .bar, #player-demo .volume.mute .progress-bar {
   background: #d6eff6;
