@@ -212,6 +212,8 @@ body {
  *********************************************/
 .reveal a {
   color: #3b759e;
+  font-family: 'Microsoft YaHei', 'SimHei', 'STHeiti', sans-serif;
+  font-weight: bold;
   text-decoration: none;
   -webkit-transition: color 0.15s ease;
   -moz-transition: color 0.15s ease;

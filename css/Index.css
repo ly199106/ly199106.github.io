@@ -1,19 +1,10 @@
 .comment{
 	margin-top: 20px;
 }
-.demoarea {
-    margin-bottom: 30px;
-}
 .demoimg {
     width: 600px;
 	height: 342px;
 	border-radius: 5px;
-}
-.demotitle {
-    color: #3b759c;
-	font-size: 36px;
-	font-family: 'Microsoft YaHei', 'SimHei', 'STHeiti', sans-serif;
-
 }
 .navbar-headerimg {
 width: 42px;
