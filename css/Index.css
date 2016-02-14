@@ -1,3 +1,9 @@
+.comment{
+	margin-top: 20px;
+}
+.demoarea {
+
+}
 .navbar-headerimg {
 width: 42px;
 height: 42px;
@@ -60,9 +66,7 @@ font-weight: bold;
 width: 90px;
 text-align: center;
 }
-.comment{
-	margin-top: 20px;
-}
+
 /* post
  * post articles area
  */
