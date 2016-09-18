@@ -2,7 +2,7 @@
 layout: post
 title: Machine Learning
 date:   2016-09-18
-categories: Machine Learning
+categories: ML
 tags: [blog]  
 summary: Caltech的公开课
 image: /image/ML.png
